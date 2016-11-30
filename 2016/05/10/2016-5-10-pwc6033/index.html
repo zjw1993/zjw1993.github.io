@@ -3,14 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Zhang&#39;s Code Future</title>
+  <title>记录PWC6033问题的解决方案 | Zhang&#39;s Code Future</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Zhang's Code Future">
-<meta property="og:url" content="/index.html">
+  <meta name="description" content="在部署毕业设计项目至服务器的时候遇到了PWC6033这个错误，查了好久才解决，仅此记录一下解决办法。   
+背景　　项目是Springmvc Spring Mybatis 框架的web项目，在本地部署没有任何问题，但是部署到linux服务器的tomcat容器中的时候抛出PWC6033这个异常。　　网上好多说是少jar包的，问我的老师也说是少jar包，但是按照少jar包的方式去调整，导入对应的j">
+<meta property="og:type" content="article">
+<meta property="og:title" content="记录PWC6033问题的解决方案">
+<meta property="og:url" content="/2016/05/10/2016-5-10-pwc6033/index.html">
 <meta property="og:site_name" content="Zhang's Code Future">
+<meta property="og:description" content="在部署毕业设计项目至服务器的时候遇到了PWC6033这个错误，查了好久才解决，仅此记录一下解决办法。   
+背景　　项目是Springmvc Spring Mybatis 框架的web项目，在本地部署没有任何问题，但是部署到linux服务器的tomcat容器中的时候抛出PWC6033这个异常。　　网上好多说是少jar包的，问我的老师也说是少jar包，但是按照少jar包的方式去调整，导入对应的j">
+<meta property="og:image" content="/images/pwc6033/1.png">
+<meta property="og:updated_time" content="2016-11-30T08:47:09.352Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Zhang's Code Future">
+<meta name="twitter:title" content="记录PWC6033问题的解决方案">
+<meta name="twitter:description" content="在部署毕业设计项目至服务器的时候遇到了PWC6033这个错误，查了好久才解决，仅此记录一下解决办法。   
+背景　　项目是Springmvc Spring Mybatis 框架的web项目，在本地部署没有任何问题，但是部署到linux服务器的tomcat容器中的时候抛出PWC6033这个异常。　　网上好多说是少jar包的，问我的老师也说是少jar包，但是按照少jar包的方式去调整，导入对应的j">
+<meta name="twitter:image" content="/images/pwc6033/1.png">
   
   
     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
@@ -57,61 +66,7 @@
   </div>
 </div>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2016/05/16/hello-world/" class="article-date">
-  <time datetime="2016-05-15T16:00:00.000Z" itemprop="datePublished">2016-05-16</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/test/">test</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/16/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>
-        
-          <p class="article-more-link">
-            <a href="/2016/05/16/hello-world/#more">阅读全文</a>
-          </p>
-        
-      
-    </div>
-    <footer class="article-footer">
-		
-      <!--<a data-url="/2016/05/16/hello-world/" data-id="ciw4ny96u0002ssvqw7nxtsul" class="article-share-link">分享</a>-->
-	  
-      
-           <a href="/2016/05/16/hello-world/#disqus_thread" class="article-comment-link"><span class="ds-thread-count" data-thread-key="ciw4ny96u0002ssvqw7nxtsul">评论</span></a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HelloWorld/">HelloWorld</a></li></ul>
-
-	  
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-2016-5-10-pwc6033" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-2016-5-10-pwc6033" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2016/05/10/2016-5-10-pwc6033/" class="article-date">
   <time datetime="2016-05-09T16:00:00.000Z" itemprop="datePublished">2016-05-10</time>
@@ -128,8 +83,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/10/2016-5-10-pwc6033/">记录PWC6033问题的解决方案</a>
+    <h1 class="article-title" itemprop="name">
+      记录PWC6033问题的解决方案
     </h1>
   
 
@@ -139,11 +94,13 @@
       
         <p>　　在部署毕业设计项目至服务器的时候遇到了PWC6033这个错误，查了好久才解决，仅此记录一下解决办法。   </p>
 <h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p>　　项目是Springmvc Spring Mybatis 框架的web项目，在本地部署没有任何问题，但是部署到linux服务器的tomcat容器中的时候抛出PWC6033这个异常。<br>　　网上好多说是少jar包的，问我的老师也说是少jar包，但是按照少jar包的方式去调整，导入对应的jar包之后并没有什么效果，依然报这个错。<br>　　最后在StackOverflow 上无意中看到这个办法，试了一下，居然好了……</p>
-        
-          <p class="article-more-link">
-            <a href="/2016/05/10/2016-5-10-pwc6033/#more">阅读全文</a>
-          </p>
-        
+<a id="more"></a>
+<h3 id="报错信息"><a href="#报错信息" class="headerlink" title="报错信息"></a>报错信息</h3><p>　　PWC6033:Unable to compile class for JSP……<br>　　具体信息如下图：<br>　　<img src="/images/pwc6033/1.png" alt="PWC6033报错信息"></p>
+<h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><p>　　修改tomcat &gt; conf 目录下的 context.xml 文件   </p>
+<p>　　增加加了一项配置：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;Loader delegate=&quot;true&quot; /&gt;</div></pre></td></tr></table></figure></p>
+<p>　　重启tomcat即可。   </p>
+<p>　　我也没明白原理是什么，有知道的大神欢迎为我普及一下,不胜感激哈哈。邮箱1070394375@qq.com</p>
+
       
     </div>
     <footer class="article-footer">
@@ -160,62 +117,46 @@
     </footer>
   </div>
   
+    
+<nav id="article-nav">
+  
+    <a href="/2016/05/16/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
 </article>
 
 
-  
-  
+<section id="comments">
+	<div id="disqus_thread" class="ds-thread" data-thread-key="ciw4ny96q0000ssvq4vjzrx8s" data-title="记录PWC6033问题的解决方案" data-url="/2016/05/10/2016-5-10-pwc6033/"></div>
+	<script>var duoshuoQuery = {short_name:"zjw1993"};</script>
+    
+	
+</section>
 </section>
         
           
             <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">分类</h3>
+    <div class="widget-wrap fixed">
+    <h3 class="widget-title">目录</h3>
+
     <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/test/">test</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/tomcat/">tomcat</a><span class="category-list-count">1</span></li></ul>
+        <ul class='toc'>
+        <li><a class='anchor' href='#logo'>标题</a></li>
+        <li><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#背景"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#报错信息"><span class="toc-number">2.</span> <span class="toc-text">报错信息</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决办法"><span class="toc-number">3.</span> <span class="toc-text">解决办法</span></a></li></ol></li>
+        <li><a class='anchor' href='#comments'>评论</a></li> 
+        </ul>
     </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">近期发布</h3>
-    <div class="widget recents">
-      <ul>
-        
-          <li>
-            <a href="/2016/05/16/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2016/05/10/2016-5-10-pwc6033/">记录PWC6033问题的解决方案</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">标签</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/HelloWorld/" style="font-size: 10px;">HelloWorld</a> <a href="/tags/tomcat/" style="font-size: 10px;">tomcat</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016年05月</a><span class="archive-list-count">2</span></li></ul>
-    </div>
-  </div>
-
-  
+</div>
 </aside>
           
         
@@ -249,6 +190,8 @@
     
 	<script>  
 	  var disqus_shortname = 'zjw1993';
+	  
+	  var disqus_url = '/2016/05/10/2016-5-10-pwc6033/';
 	  
 	  (function(){
 		
